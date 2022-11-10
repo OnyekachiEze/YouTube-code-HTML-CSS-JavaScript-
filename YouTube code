@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GenTube</title>
+<link rel="stylesheet" href="fontawesome/css/all.css">
+
+<style type="text/css">
+	body{
+		background: radial-gradient(red, white) ;
+		color: white;
+	}
+	
+	span.a {
+	font-size: 20px;
+	color: white;
+	letter-spacing: 3px;
+	}
+	
+	i {
+	margin-left: 5px;
+	color: black;
+	}
+	
+	i.i{
+	margin-left: 10px;
+	}
+	
+video {
+    width: 100%;
+    height: auto;
+}
+	div{
+		border: 4px solid grey;
+	}
+	
+button.all {
+		background-color: red;
+		color: black;
+		padding: 4px;
+		border-radius: 9px;
+		margin-left: 5px;
+	}
+	
+	button.sports {
+		background-color: grey;
+		color: white;
+		border-radius: 9px;
+		padding: 4px;
+		margin-left: 5px;
+	}
+	
+	button.fc{
+		background-color: grey;
+		color: white;
+		border-radius: 9px;
+		padding: 4px;
+		margin-left: 5px;
+	}
+	
+	p {
+		background-color: black;
+		color: cyan;
+		padding: 12px;
+	}
+	
+	/* Center the loader */
+	#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+
+	}
+	
+	@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+
+	100% { -webkit-transform: rotate(360deg); }
+	}
+	
+	@keyframes spin {
+	0% { transform: rotate(0deg); }
+ 
+	100% { transform: rotate(360deg); }
+
+	}
+	
+	/* Add animation to "page content" */
+	.animate-bottom {
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s
+	}
+	
+	@-webkit-keyframes animatebottom {
+	from { bottom:-100px; opacity:0 } 
+
+	to { bottom:0px; opacity:1 }
+	}
+	
+	@keyframes animatebottom { 
+	from{ bottom:-100px; opacity:0 } 
+
+	to{ bottom:0; opacity:1 }
+	}
+	
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+	<i class="fa-brands fa-youtube"style="color: red; font-size: 24px;"><span class="a">YouTube</span></i>
+
+	<i class="i"><span class="b"> <i class="fa fa-tv"></span></i>
+	<i class="i"><i class="fa fa-bell"></i>
+	<i class="i"><i class="fa fa-search"></i>
+	<i class="fa-brands fa-google"></i>
+<br>
+
+</br>
+
+<button class="fa fa-compass"></button><button class="all">ALL</button><button class="sports">Sports League</button><button class="fc">FC Barcelona</button>
+<br>
+
+</br>
+
+<div>
+<video width="400"controls>
+  <source src="/storage/emulated/0/FMWhatsApp/Media/FMWhatsApp_Statuses/2349133014214_status_b73362e3a0484381b35ceda7d2d90730.mp4" type="video/mp4">
+  <source src="/storage/emulated/0/FMWhatsApp/Media/FMWhatsApp_Statuses/2349133014214_status_b73362e3a0484381b35ceda7d2d90730.mp4" type="video">
+</video>
+
+<p>insult of the week</p>
+
+</div>
+
+<br>
+<div class="a">
+<video width="400" controls >
+<source src="/storage/emulated/0/FMWhatsApp/Media/FMWhatsApp_Statuses/2349135799414_status_2b707fb7a44b4724a9088411668d8a32.mp4" type="video/mp4">
+
+<source src="/storage/emulated/0/FMWhatsApp/Media/FMWhatsApp_Statuses/2349135799414_status_2b707fb7a44b4724a9088411668d8a32.mp4" type="video/ogg">
+</video>
+
+<p>Relationship Advice</p>
+</div>
+
+<br>
+	<div>
+		<video width="400" controls>
+	<source src="/storage/emulated/0/FMWhatsApp/Media/FMWhatsApp_Statuses/2349135799414_status_4c7062eb6ac6491e8cc84c3d7768987d.mp4" type="video/mp4">
+	<source src="/storage/emulated/0/FMWhatsApp/Media/FMWhatsApp_Statuses/2349135799414_status_4c7062eb6ac6491e8cc84c3d7768987d.mp4" type="video/ogg">
+</video>
+
+<p>One Million Advice</p>
+</div>
+
+<br>
+
+<div>
+	<video width="400" controls>
+	<source src="/storage/7F02-130B/PhoneMaster/Videos/2348141691818_status_4571f0327166476f922e5e39957910b9.mp4" type="video/mp4">
+	<source src="/storage/7F02-130B/PhoneMaster/Videos/2348141691818_status_4571f0327166476f922e5e39957910b9.mp4" type="video/ogg">
+</video>
+
+<p>Things i cannot do in my life</p>
+
+</div>
+
+<script type="text/javascript">
+alert(" Welcome To YouTube");
+</script>
+
+
+<script type="text/javascript" src="fontawesome/js/all.css"></script>
+
+
+</body>
+</html>
